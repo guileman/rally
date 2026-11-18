@@ -46450,7 +46450,7 @@ void main() {
       this._prevFov = this.scene.camera.fov;
       r.xr.enabled = true;
       r.xr.setReferenceSpaceType("local");
-      r.xr.setFramebufferScale(0.85);
+      r.xr.setFramebufferScaleFactor(0.85);
       const session = await navigator.xr.requestSession("immersive-vr", { optionalFeatures: ["local-floor"] });
       await r.xr.setSession(session);
       try {
